@@ -1,0 +1,22 @@
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.subtitulo {
+    margin-top: -64px;
+    margin-left: -1%;
+    margin-right: -4%;
+}
+
+
+.contenido3 {
+    flex: 1;
+    padding: 11px;
+    margin: 24px;
+    margin-left: 0%;
+}
+
