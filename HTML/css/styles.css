@@ -1,0 +1,200 @@
+/*Aqui estan los estilos de las paginas*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+    background-color: white;
+}
+
+nav {
+    position: absolute;
+    top: 98px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 19px 1px;
+    box-sizing: border-box; /* Incluye el padding en el ancho */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1rem;
+    background-color: rgb(41, 88, 175);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: green;
+}
+
+.imagen {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 4rem;
+}
+
+.subtitulo {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: -1rem 
+}
+
+.main-container {
+    padding: 1rem;
+}
+
+.content-container {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.contenido {
+    flex: 1;
+    padding: 1rem;
+    margin: 0 auto; /* Centra el contenido */
+}
+
+.logo {
+    margin: 2rem auto; /* Ajusta el margen */
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 60px; 
+    height: auto;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+label {
+    font-weight: 300;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+dl {
+    margin-top: 2rem;
+}
+
+ol ul {
+    list-style: lower-latin;
+}
+
+form {
+    width: 500px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    justify-content: center;
+    margin: 2rem;
+}
+
+/*Aqui esta los Jqueries*/
+@media (min-width: 1024px) {
+    .nav ul {
+        gap: 2rem;
+    }
+    
+    .contenido {
+        width: 97%;width: 97%;
+    }
+
+    .form {
+        width: 600px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-left: -4%;
+    margin-right: -4%;
+    }
+    
+    .contenido {
+        width: 90%;
+    }
+
+    .form {
+        width: 80%;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 767px) {
+    nav {
+        position: static;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    nav ul li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .subtitulo {
+        padding: 0.5rem;
+    }
+
+    .contenido {
+        width: 95%;
+        padding: 0.5rem;
+    }
+
+    .logo img {
+        width: 50px;
+    }
+}
