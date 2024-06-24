@@ -42,101 +42,140 @@
     <main>
       <div class="contenido">
         <section>
-          <h2 class="subtitulo">Form registre</h2>
+          <h2 class="subtitulo">Form Register</h2>
           <form action="./show_data.html" method="get">
-            <fieldset>
-              <legend>Datos personales</legend>
-
-              <label for="name">Player First Name</label>
-              <input type="text" name="name" id="name" />
-
-              <label for="lastname">Last name</label>
-              <input type="text" name="lastname" id="lastname" />
-
-              <label for="Street">Street</label>
-              <input type="number" />
-
-              <label for="ZipCode">Zip Code</label>
-              <input type="Number" name="ZipCode" id="ZipCode" />
-
-              <label for="Birth">Birth Day</label>
-              <input type="number" name="Birth" id="Birth" />
-            </fieldset>
-            <fieldset>
-
-              <label for="gender">Sexo</label>
-              <input type="radio" name="gender" id="gender" />Hombre
-              <input type="radio" name="gender" id="gender" />Mujer
-              <input type="radio" name="gender" id="gender" />Otro
-            </fieldset>
-
-            <fieldset>
-              <label for="grade">Grade</label>
-              <input type="radio" name="grade" id="grade" />
-
-              <label for="pre-school">Pre-School</label>
-              <input type="radio" name="pre-school" id="pre-school">1st
-              <input type="radio" name="pre-school" id="pre-school">2nd
-              <input type="radio" name="pre-school" id="pre-school">3rd
-              <input type="radio" name="pre-school" id="pre-school">4th
-              <input type="radio" name="pre-school" id="pre-school">5th
-            </fieldset>
-
-            <fieldset>
-              <label for="school">which Elementary School do you live near</label>
-              <input type="radio" name="school" id="school" />AJ Katzenmaier
-              <input type="radio" name="school" id="school" />Greenbay
-              <input type="radio" name="school" id="school" />Howard A Yeager
-              <input type="radio" name="school" id="school" />Marjorie P Hart
-              <input type="radio" name="school" id="school" />North Elementary
-              <input type="radio" name="school" id="school" />South Elementary
-            </fieldset>
-
-            <fieldset>
-              <label for="game">What position(s) do you normally play? (check all that apply)</label>
-              <input type="radio" name="game" id="game" />Forward
-              <input type="radio" name="game" id="game" />Defense
-              <input type="radio" name="game" id="game" />Midfield
-              <input type="radio" name="game" id="game" />Goalkeeper
-            </fieldset>
-
-            <fieldset>
-              <label for="uniformsize">Uniform Size</label>
-              <input type="radio" name="uniformsize" id="uniformsize" />Youth
-              Smal
-              <input type="radio" name="uniformsize" id="uniformsize" />Youth
-              Medium
-              <input type="radio" name="uniformsize" id="uniformsize" />Youth
-              Large
-              <input type="radio" name="uniformsize" id="uniformsize" />Small
-              <input type="radio" name="uniformsize" id="uniformsize" />Medium
-              <input type="radio" name="uniformsize" id="uniformsize" />Large
-              <input type="radio" name="uniformsize" id="uniformsize" />Extra
-              Large
-            </fieldset>
-
-            <fieldset>
-                  <h2><strong>Permission to Play</strong></h2>
+              <fieldset>
+                  <legend>Datos personales</legend>
+      
+                  <label for="name">Player First Name</label>
+                  <input type="text" name="name" id="name" />
+      
+                  <label for="lastname">Last name</label>
+                  <input type="text" name="last-name" id="lastname" />
+      
+                  <label for="street">Street</label>
+                  <input type="text" name="street" id="street" />
+      
+                  <label for="zip-code">Zip Code</label>
+                  <input type="text" name="zip-code" id="zip-code" />
+      
+                  <label for="birth">Birth Date</label>
+                  <input type="date" name="birth-date" id="birth" />
+              </fieldset>
+      
+              <fieldset>
+                  <legend>Género</legend>
+                  <input type="radio" name="gender" value="male" id="male" />
+                  <label for="male">Hombre</label>
+      
+                  <input type="radio" name="gender" value="female" id="female" />
+                  <label for="female">Mujer</label>
+      
+                  <input type="radio" name="gender" value="other" id="other" />
+                  <label for="other">Otro</label>
+              </fieldset>
+      
+              <fieldset>
+                  <legend>Grado</legend>
+                  <input type="radio" name="grade" value="pre-school" id="pre-school" />
+                  <label for="pre-school">Pre-School</label>
+      
+                  <input type="radio" name="grade" value="1st" id="1st" />
+                  <label for="1st">1st</label>
+      
+                  <input type="radio" name="grade" value="2nd" id="2nd" />
+                  <label for="2nd">2nd</label>
+      
+                  <input type="radio" name="grade" value="3rd" id="3rd" />
+                  <label for="3rd">3rd</label>
+      
+                  <input type="radio" name="grade" value="4th" id="4th" />
+                  <label for="4th">4th</label>
+      
+                  <input type="radio" name="grade" value="5th" id="5th" />
+                  <label for="5th">5th</label>
+              </fieldset>
+      
+              <fieldset>
+                  <legend>Escuela</legend>
+                  <label for="school">Which Elementary School do you live near:</label>
+                  <input type="radio" name="school" value="aj-katzenmaier" id="aj-katzenmaier" />
+                  <label for="aj-katzenmaier">AJ Katzenmaier</label>
+      
+                  <input type="radio" name="school" value="greenbay" id="greenbay" />
+                  <label for="greenbay">Greenbay</label>
+      
+                  <input type="radio" name="school" value="howard-a-yeager" id="howard-a-yeager" />
+                  <label for="howard-a-yeager">Howard A Yeager</label>
+      
+                  <input type="radio" name="school" value="marjorie-p-hart" id="marjorie-p-hart" />
+                  <label for="marjorie-p-hart">Marjorie P Hart</label>
+      
+                  <input type="radio" name="school" value="north-elementary" id="north-elementary" />
+                  <label for="north-elementary">North Elementary</label>
+      
+                  <input type="radio" name="school" value="south-elementary" id="south-elementary" />
+                  <label for="south-elementary">South Elementary</label>
+              </fieldset>
+      
+              <fieldset>
+                  <legend>Posición</legend>
+                  <label for="position">What position(s) do you normally play? (check all that apply)</label>
+                  <input type="checkbox" name="position" value="forward" id="forward" />
+                  <label for="forward">Forward</label>
+      
+                  <input type="checkbox" name="position" value="defense" id="defense" />
+                  <label for="defense">Defense</label>
+      
+                  <input type="checkbox" name="position" value="midfield" id="midfield" />
+                  <label for="midfield">Midfield</label>
+      
+                  <input type="checkbox" name="position" value="goalkeeper" id="goalkeeper" />
+                  <label for="goalkeeper">Goalkeeper</label>
+              </fieldset>
+      
+              <fieldset>
+                  <legend>Tamaño del uniforme</legend>
+                  <label for="uniform-size">Uniform Size</label>
+                  <input type="radio" name="uniform-size" value="youth-small" id="youth-small" />
+                  <label for="youth-small">Youth Small</label>
+      
+                  <input type="radio" name="uniform-size" value="youth-medium" id="youth-medium" />
+                  <label for="youth-medium">Youth Medium</label>
+      
+                  <input type="radio" name="uniform-size" value="youth-large" id="youth-large" />
+                  <label for="youth-large">Youth Large</label>
+      
+                  <input type="radio" name="uniform-size" value="small" id="small" />
+                  <label for="small">Small</label>
+      
+                  <input type="radio" name="uniform-size" value="medium" id="medium" />
+                  <label for="medium">Medium</label>
+      
+                  <input type="radio" name="uniform-size" value="large" id="large" />
+                  <label for="large">Large</label>
+      
+                  <input type="radio" name="uniform-size" value="extra-large" id="extra-large" />
+                  <label for="extra-large">Extra Large</label>
+              </fieldset>
+      
+              <fieldset>
+                  <legend>Permission to Play</legend>
                   <p>
-                    l, the parent or guardian of the minor registrant, agree that the
-                    registrant and I will abide by all the rules of the Mighty Ducks
-                    Hockey League (MDHL). In recognizing the possibility of physical
-                    injury associated with hockey and in consideration for the
-                    "League" accepting the registrant for its hockey programs and
-                    activities, I hereby release, discharge, and/or otherwise
-                    indemnify
+                      I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the "League" accepting the registrant for its hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify.
                   </p>
-
-                  <label for="parent">Parent/Guardian/Signature</label>
-                  <input type="text" name="parent" id="parent">
-
+      
+                  <label for="signature">Parent/Guardian Signature</label>
+                  <input type="text" name="signature" id="signature" />
+      
                   <label for="date">Date</label>
-                  <input type="date" name="Date" id="date">
-            </fieldset>
-
-            <button>Enviar</button>
-        </form>
-        </section>
+                  <input type="date" name="date" id="date" />
+              </fieldset>
+      
+              <button type="submit">Enviar</button>
+          </form>
+      </section>
+      
       </div>
     </main>
 
